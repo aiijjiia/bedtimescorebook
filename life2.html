@@ -1,0 +1,227 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Poems</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1539289_3kjbkfez1wy.css">
+  <script src="./js/jquery.js"></script>
+  <script src="./js/1.js"></script>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+
+    .con {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    .con_lf {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .con_lf img {
+      width: 500px;
+      height: 700px;
+    }
+
+    .con_rg {
+      flex: 1;
+      padding-left: 10%;
+      box-sizing: border-box;
+    }
+
+    .tl {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .mar {
+      margin-bottom: 30px;
+    }
+
+    .textCon {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* show */
+    .show {
+      animation: 1s show 0s forwards;
+      -webkit-animation: 1s show 0s forwards;
+      -moz-animation: 1s show 0s forwards;
+      animation-fill-mode: forwards;
+    }
+
+    /* hide */
+    .hide {
+      animation: 1s hide 0s forwards;
+      -webkit-animation: 1s hide 0s forwards;
+      -moz-animation: 1s hide 0s forwards;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes show {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes show {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes show {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes hide {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes hide {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-moz-keyframes hide {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .f1 {
+      font-family: f1
+    }
+
+    .f2 {
+      font-family: f2
+    }
+
+    @font-face {
+      font-family: f1;
+      src: url(./fonts/avenir-black.ttf)
+    }
+
+    @font-face {
+      font-family: f2;
+      src: url(./fonts/avenir-light.ttf)
+    }
+  </style>
+</head>
+
+<body>
+  <a href="javascript:;" onclick="javascript:history.back(-1);" class="iconfont icon-icon--fanhui"
+    style="position: fixed;left:30px;top:30px;color:#000;font-size:30px;z-index:88"></a>
+
+  <div class="con">
+    <div class="con_lf">
+      <img src="images/88.jpg">
+    </div>
+    <div class="con_rg">
+      <div class="textCon">
+        <p class="tl f1">
+          LIFE PIECE IX
+        </p>
+        <div class="mar f2   dzjtxt">
+          <p>Get a piece of rubber the size of&#10;
+            your palm&#10;
+            Imagine yourself stretching the&#10;
+            rubber&#10;
+            to cover the world with it.&#10;
+            See how much you can cover.&#10;
+            Hang the piece of rubber&#10;
+            on the wall beside your bed.&#10;
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script type="text/javascript">
+  change()
+  setInterval(function () {
+    change()
+  }, 3000)
+  function change() {
+    document.querySelector('img').style.opacity = '0';
+
+    document.querySelector('img').classList = 'show';
+    setTimeout(function () {
+      document.querySelector('img').classList = 'hide';
+    }, 1500)
+  }
+
+</script>
+
+</html>
